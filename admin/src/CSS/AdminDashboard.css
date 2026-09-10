@@ -1,0 +1,104 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Segoe UI, sans-serif;
+}
+
+
+
+.dashboard{
+    display:grid;
+    height:100vh;
+    grid-template-columns: 300px 1fr;
+    width: 100%;
+}
+
+/* Sidebar */
+
+.sidebar{
+   
+    background:linear-gradient(180deg,#0f172a,#1e293b);
+    color:white;
+    padding:25px 15px;
+    display:flex;
+    flex-direction:column;
+    box-shadow:3px 0 12px rgba(0,0,0,.15);
+}
+
+.logo{
+    text-align:center;
+    margin-bottom:35px;
+}
+
+.logo h2{
+    font-size:24px;
+    font-weight:bold;
+    color:#38bdf8;
+}
+
+.sidebar nav{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+
+.sidebar nav a{
+    text-decoration:none;
+    color:#cbd5e1;
+    padding:14px 18px;
+    border-radius:10px;
+    transition:.3s;
+    font-size:16px;
+    font-weight:500;
+}
+
+.sidebar nav a:hover{
+    background:#2563eb;
+    color:white;
+    transform:translateX(5px);
+}
+
+.sidebar nav a.active{
+    background:#0ea5e9;
+    color:white;
+    font-weight:bold;
+}
+
+/* Main Content */
+
+.content{
+    flex:1;
+    padding:30px;
+    overflow-y:auto;
+    background:#16406b;
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar{
+    width:8px;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#94a3b8;
+    border-radius:10px;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+.sidebar{
+    width:220px;
+}
+
+.logo h2{
+    font-size:20px;
+}
+
+.sidebar nav a{
+    font-size:14px;
+}
+
+}

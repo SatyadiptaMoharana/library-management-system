@@ -1,0 +1,115 @@
+.dashboard-home{
+    padding:30px;
+}
+
+.dashboard-home h1{
+    margin-bottom:25px;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+    margin-bottom:35px;
+}
+
+.card{
+    padding:25px;
+    border-radius:12px;
+    color:white;
+    text-align:center;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+.card h2{
+    font-size:42px;
+}
+
+.card p{
+    margin-top:10px;
+    font-size:18px;
+}
+
+.blue{
+    background:#2563eb;
+}
+
+.green{
+    background:#16a34a;
+}
+
+.orange{
+    background:#ea580c;
+}
+
+.purple{
+    background:#7c3aed;
+}
+
+.table-container{
+    background:white;
+    border-radius:12px;
+    padding:20px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:20px;
+}
+
+th,td{
+    padding:15px;
+    border-bottom:1px solid #ddd;
+    text-align:left;
+}
+
+th{
+    background:#0f172a;
+    color:white;
+}
+
+.accept{
+    background:#22c55e;
+    color:white;
+    border:none;
+    padding:8px 15px;
+    border-radius:6px;
+    margin-right:10px;
+    cursor:pointer;
+}
+
+.reject{
+    background:#ef4444;
+    color:white;
+    border:none;
+    padding:8px 15px;
+    border-radius:6px;
+    cursor:pointer;
+}
+
+.accept:hover{
+    background:#16a34a;
+}
+
+.reject:hover{
+    background:#dc2626;
+}
+
+@media(max-width:900px){
+.cards{
+    grid-template-columns:repeat(2,1fr);
+}
+}
+
+@media(max-width:600px){
+.cards{
+    grid-template-columns:1fr;
+}
+
+table{
+    display:block;
+    overflow-x:auto;
+}
+}

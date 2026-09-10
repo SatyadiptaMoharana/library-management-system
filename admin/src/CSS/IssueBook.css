@@ -1,0 +1,106 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Segoe UI,sans-serif;
+}
+
+.issue-page{
+    padding:30px;
+    background:#f4f7fb;
+    min-height:100vh;
+}
+
+.issue-form{
+    background:white;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+    margin-bottom:35px;
+}
+
+.issue-form h2{
+    margin-bottom:20px;
+}
+
+.issue-form form{
+    display:grid;
+    grid-template-columns:1fr 1fr auto;
+    gap:15px;
+}
+
+.issue-form input{
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    outline:none;
+}
+
+.issue-form input:focus{
+    border-color:#2563eb;
+}
+
+.issue-form button{
+    background:#2563eb;
+    color:white;
+    border:none;
+    border-radius:8px;
+    padding:12px 25px;
+    cursor:pointer;
+}
+
+.issue-form button:hover{
+    background:#1d4ed8;
+}
+
+.history{
+    background:white;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+.history h2{
+    margin-bottom:20px;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+th{
+    background:#0f172a;
+    color:white;
+    padding:15px;
+}
+
+td{
+    padding:15px;
+    border-bottom:1px solid #ddd;
+}
+
+tr:hover{
+    background:#f8fafc;
+}
+
+.issued{
+    background:#22c55e;
+    color:white;
+    padding:5px 12px;
+    border-radius:20px;
+    font-size:14px;
+}
+
+@media(max-width:768px){
+
+.issue-form form{
+    grid-template-columns:1fr;
+}
+
+table{
+    display:block;
+    overflow-x:auto;
+}
+
+}
